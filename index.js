@@ -2,7 +2,7 @@ import express from "express";
 import animalRoutes from "./routes/animals.js";
 
 const app = express();
-const port = 3030;
+const port = 5050;
 
 app.use(express.json());
 

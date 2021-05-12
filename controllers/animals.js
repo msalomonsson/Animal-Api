@@ -33,7 +33,6 @@ export const addAnimalFact = async (req, res) => {
 
   let animalsRef = await firestore.collection("animals").doc(animal);
   let doc = await animalsRef.get();
-
   let facts = doc.data().facts;
   facts.push(fact);
   await firestore.collection("animals").doc(animal).set({ facts });
